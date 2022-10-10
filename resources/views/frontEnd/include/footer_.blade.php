@@ -123,7 +123,7 @@
         <div class="copyright" style="padding-top: 3px;">
             <address style="font-size: 12px;">
                 Copyright © 2017 - Ponno Bahar. All Rights Reserved.
-                Site Developed by <a href="https://bitbirds.com/" target="_blank">bitBirds Solutions</a>
+                Site Developed by <a href="#" target="_blank">Arifur Rahman</a>
             </address>
         </div>
     </div>
