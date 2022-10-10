@@ -1,0 +1,751 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+    padding: 7px;
+}
+.image-hover:hover{
+    border-radius: 15px;
+    color: #FFFFFF;
+    border: 2px solid rgba(255,0,0,0.3);opacity:0.8;
+    box-shadow: 0px 0px 10px rgba(255,0,0,0.3);opacity:0.8;,0px 0px 10px rgba(255,0,0,0.3);opacity:0.8;
+}
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+@font-face {
+    font-family: solaiman;
+    src:url(../fonts/SolaimanLipi.ttf);
+}
+body{
+    /*background: #eeeeee;*/
+    color:#000;
+}
+
+/*TOP*/
+#sb-create{
+    background-color: deeppink;
+}
+#sb-create .nav-tabs{
+    border:0px;
+}
+#sb-create .nav-tabs > li > a{
+    font-family: solaiman;
+    letter-spacing: 1px;
+    color:#fff;
+    border: 0px;
+    border-radius: 0px;
+    cursor: pointer;
+}
+#sb-create .nav-tabs > li > a:hover, a:focus{
+    background: none;
+    color: black;
+}
+#sb-create .nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
+    background: none;
+    color:#ff8a82;
+}
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:#fff;
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+
+/*Search*/
+#sb-search-log{
+    background: #ffffff;
+}
+.sb-search{
+    margin-top: 25px;
+}
+.sb-search .form-control{
+    border-radius: 10px;
+    border: 2px solid #ea128a;
+    height: 40px;
+    border-right: 1px solid rgba(0, 128, 0, 0.35);
+}
+.sb-search .btn-default{
+    height: 40px;
+    border: 2px solid #ea128a;
+    border-radius: 0px;
+    border-left: 0px;
+}
+.sb-search .btn-default:last-child{
+    background: #ea128a;
+    color: #fff;
+}
+.sb-cart{
+    margin-top: 30px;
+    margin-left: 20%;
+}
+.sb-cart a{
+    color: #333333;
+}
+.sb-cart i{
+    font-size: 26px;
+    color: #ea128a;
+}
+.sb-cart i:last-child{
+    border-left: 1px solid #eee;
+    padding-left: 10px;
+    margin-left: 5px;
+}
+.sb-cart i:hover, a:hover{
+    color: pink;
+    text-decoration: none;
+}
+/*MENU*/
+.wrap-sticky{
+    height: 80px !important;
+}
+
+/*Slider*/
+.sb-slider img{
+    width: 100%;
+}
+.sb-slider .carousel-indicators{
+    left: 70%;
+}
+.sb-slider .carousel-indicators li{
+    border-radius: 0px;
+}
+.sb-slider .carousel-indicators .active{
+    background-color: #ff0000;
+}
+nav.bootsnav .megamenu-content .title{
+    font-weight: 600;
+    color: deeppink;
+    font-size: 22px;
+}
+nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a:hover{
+    color: deeppink !important;
+}
+
+/*Product Slider*/
+.pro-carousel{
+    padding: 0px 0px 5px;
+    background-color: white;
+    margin-top: 0px;
+}
+.pro-carousel .owl-prev{
+    position: absolute;
+    top: 45%;
+    left: -5px;
+    border-radius: 0px !important;
+}
+.pro-carousel .owl-next{
+    position: absolute;
+    top: 45%;
+    right: -5px;
+    border-radius: 0px !important;
+}
+
+
+/*Container Box*/
+.cont-box{
+    padding: 35px 0px;
+}
+.container-box{
+    height: 450px;
+    background: #fff;
+    border-top:2px solid #4cae4c;
+    box-shadow: 0px 0px 23px -2px #b7b7b7;
+    overflow: hidden;
+}
+
+.category-list{}
+
+.category-list h3{
+    margin: 0px;
+    padding: 15px 20px;
+    background: #4cae4c;
+    color: #fff;
+    transition: 0.4s all;
+    font-family: solaiman;
+}
+.category-list h3:hover{
+    color: #333;
+}
+.c-list{
+    padding-top: 10px;
+}
+.c-list p{
+    margin: 0px;
+    padding: 0px 20px;
+    padding-top: 8px;
+    color: #333;
+    font-size: 15px;
+}
+.c-list p:hover{
+    color:#4cae4c;
+}
+
+.pcc img{
+    width: 100%;
+    height: 450px !important;
+}
+.pcc .carousel-indicators{
+    bottom: 0px;
+}
+
+.product-area .thumbnail{
+    margin: 0px;
+    height: 225px;
+    border-radius: 0px;
+    border: 1px solid #eee;
+    text-align: center;
+}
+.product-area .thumbnail:hover{
+    box-shadow: 0px 0px 16px -3px;
+}
+.product-area .thumbnail .caption{
+    padding: 10px 0px;
+    line-height: 28px;
+}
+.product-area .thumbnail .caption h3{
+    margin: 0px;
+    font-size: 18px;
+    color: #F44336;
+}
+.product-area .thumbnail .caption p{
+    margin: 0px;
+    font-size: 13px;
+    font-family: solaiman;
+}
+/*footer*/
+footer{
+    background: #333;
+    padding: 35px 0px;
+    color: #fff;
+    font-size: 15px;
+}
+.fot-left p{
+    border-bottom: 1px dotted #eee;
+    margin: 0px;
+    padding: 15px 0px;
+}
+.fot-left p strong{
+    font-size: 16px;
+}
+.fot-left p a{
+    color: #9c9c9c;
+}
+.fot-left p a:hover{
+    color: #4cae4c;
+}
+.fot-right h3{
+    margin: 0px;
+    color: #c9302c;
+    padding-bottom: 15px;
+    font-weight: 600;
+}
+.fot-right form{
+    padding: 10px 0px;
+}
+.fot-right .form-control{
+    border: none;
+    border-radius: 0px;
+}
+.fot-right .btn{
+    border: none;
+    border-radius: 0px;
+    background: #4cae4c;
+}
+.fot-query{
+    padding: 5px 0px;
+}
+.fot-query a{
+    padding-right: 15px;
+    color: #fff;
+}
+.fot-query i{
+    color: #c9302c;
+}
+.fot-query a:hover{
+    color: #4cae4c;
+}
+.fot-add{
+    padding: 5px 0px;
+}
+.fot-add p{
+    margin: 0px;
+    padding-bottom: 5px;
+}
+.fot-add i{
+    color: #4cae4c;
+}
+
+.fot-social span{
+    border: 1px solid;
+    background: #fff;
+    color: #4cae4c;
+    padding: 5px 10px;
+}
+
+/*Categoyr*/
+.sb-filter-product{
+    padding-top: 25px;
+}
+
+.sb-filter-product .panel-heading{
+    border: 1px solid #c7eac7;
+    padding: 15px 20px;
+}
+.sb-filter-product .panel-heading h4{
+    color: #3a803c;
+    font-weight: 600;
+}
+.sb-filter-product .panel-body a{
+    padding: 10px 25px;
+    background: #cde2cd;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.sb-product-category a{
+    color: #333;
+}
+.sb-product-category .thumbnail{
+    border: none;
+    overflow: hidden;
+}
+.sb-product-category h5{
+    text-align: center;
+    line-height: 22px;
+}
+.sb-product-category h3{
+    margin: 0px;
+    text-align: center;
+    margin-bottom: 14px;
+    font-weight: 600;
+    color: red;
+}
+.sb-product-category .btn{
+    border: none;
+    padding: 5px 20px;
+    background: #c7eac7;
+    font-weight: 600;
+    border-radius: 0px;
+}
+.sb-product-category a:hover .btn{
+    background: #c9302c;
+    color: #fff;
+}
+.sb-product-category img{
+    transition: .3s ease-in;
+}
+.sb-product-category a:hover img{
+    transform: scale(1.1);
+}
+
+.sb-prod-det-img{
+    padding: 15px 0px;
+}
+.sb-prod-info h4, .sb-prod-info h3{
+    border-bottom: 1px solid #fff;
+    padding: 5px 1px;
+    margin: 0px;
+}
+.sb-prod-info h3{
+    font-weight: 600;
+    color: #c9302c;
+}
+.sb-prod-info form{
+    padding: 15px 10px;
+}
+.sb-prod-info button{
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background: #309e30;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 5px;
+}
+.sb-prod-cont{
+    background: #ffe4e1;
+    text-align: center;
+    padding: 1px;
+    color: deeppink;
+}
+
+.sb-product-details h1{
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid #4cae4c;
+    color: #4cae4c;
+}
+.sb-details{
+    background: #FFF;
+    margin-bottom: 15px;
+}
+.sb-details h3{
+    margin: 0px;
+    padding: 15px;
+}
+.sb-related h1{
+    text-align: center;
+    background: #4cae4c;
+    padding: 10px;
+    color: #fff;
+}
+.sb-related a{
+    color: #333;
+}
+.sb-related .thumbnail{
+    border: none;
+    overflow: hidden;
+    border-radius: 0px;
+}
+.sb-related .thumbnail h3{
+    text-align: center;
+    color: #c9302c;
+    font-weight: 600;
+}
+.sb-related .thumbnail .btn{
+    border: none;
+    padding: 8px 20px;
+    background: #c7eac7;
+    font-weight: 600;
+    border-radius: 0px;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+/*.my-fixed{*/
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*z-index: 9999;*/
+    /*width: 100%;*/
+/*}*/
+
+
+
+
+.search-category{
+    height: 40px;
+    padding: 0;
+    background-color: white;
+    border:2px solid deeppink;
+}
+/*my css*/
+
+.slider-section{
+    padding: 7px 0px;
+    background-color: #f6f6f6;
+    /*border:1px solid ;*/
+}
+.slider-add{
+    height: 240px;
+    /*border: 1px solid hotpink;*/
+    border-radius: 5px;
+}
+/*.slider-add:hover{*/
+    /*height: 240px;*/
+    /*!*border: 1px solid hotpink;*!*/
+    /*border-radius: 5px;*/
+    /*box-shadow: 0px 0px 10px rgba(255,255,255,0.2),0px 0px 10px rgba(255,255,255,.3);*/
+/*}*/
+.slider-slider{
+    width: 100%;
+    height: 492px;
+    /*border: 1px solid deeppink;*/
+    border-radius: 5px;
+}
+.cate-img{
+    height: 300px;
+}
+.category-product-item{
+    padding: 5px 10px;
+}
+.cat-display{
+    display: none;
+}
+.custom-hover:hover a{
+    display: block;
+}
+.custom-hover:hover img{
+    height: 247px;
+    width: 100%;
+}
+@media screen and (max-width: 480px) {
+    [class*='col-'] {
+        width: 100%;
+    }
+}
+
+
+/*my css*/
+
+
+
+
+
+
+
+
+
+
+
